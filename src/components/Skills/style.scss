@@ -1,0 +1,107 @@
+@import "../../assets/styles/_variables.scss";
+@import "../../assets/styles/_extends.scss";
+.skills {
+    margin: 50px 0;
+    &__header33 {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__title {
+        @extend %title;
+    }
+
+    &__button-ico {
+        margin-right: 10px;
+    }
+
+    &__form {
+        border: 1px solid $green;
+        padding: 20px 15px;
+        border-radius: 5px;
+    }
+
+    &__inputs {
+        @extend %content-text;
+        position: relative;
+        margin-bottom: 22px;
+
+        label {
+            margin-right: 20px;
+        }
+
+        input {
+            width: 270px;
+            height: 40px;
+            border: 1px solid $raven;
+            border-radius: 5px;
+            padding: 10px;
+            outline: none;
+        }
+
+        input.error {
+            border: 1px solid $red;
+        }
+
+        .errors {
+            font-size: 12px;
+            position: absolute;
+            color: $red;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        margin: 35px 0 15px 0;
+    }
+
+    &__content-value {
+        background-color: $green;
+        margin-top: 5px;
+        padding: 4px 15px;
+    }
+
+    &__content-value-title {
+        color: $white;
+        min-width: 20px;
+        @extend %content-text;
+    }
+
+    &__progress {
+        width: 100%;
+        height: 10px;
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $raven;
+    }
+
+    &__progress-value {
+        width: 20%;
+        height: 10px;
+        border-style: solid;
+        border-width: 0 1px;
+        border-color: $raven;
+    }
+
+    &__levels {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__levels-title {
+        width: 22%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            color: $raven;
+            font-size: 12px;
+            @extend %content-text;
+        }
+    }
+
+}

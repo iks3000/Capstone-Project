@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Portfolio component 1`] = `
+<div
+  className="portfolio"
+  id="portfolioComponent"
+>
+  <h2
+    className="portfolio__title"
+  >
+    Portfolio
+  </h2>
+  <IsotopeContent />
+</div>
+`;

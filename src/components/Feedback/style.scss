@@ -1,0 +1,44 @@
+@import '../../assets/styles/_variables.scss';
+@import '../../assets/styles/_extends.scss';
+
+
+.feedback {
+    margin: 50px 0 0;
+
+    &__title {
+        @extend %title;
+    }
+
+    &__container {
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .info {
+        padding: 15px;
+        background-color: $gallery;
+        margin-bottom: 20px;
+    }
+
+    &__user-block {
+        display: flex;
+        align-items: center;
+        font: 400 12px/14px $primary-fonts;
+    }
+
+    &__user-img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    &__user-name {
+        color: $oxfordBlue;
+    }
+
+    &__user-link {
+        color: $green;
+    }
+}

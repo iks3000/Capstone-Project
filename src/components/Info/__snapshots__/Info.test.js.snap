@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Inner component 1`] = `
+<p
+  className="info"
+>
+  test
+</p>
+`;

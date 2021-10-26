@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Box component 1`] = `
+<div
+  className="info-box"
+  id="boxComponent"
+>
+  <h2
+    className="info-box__title"
+  />
+  <Info />
+</div>
+`;

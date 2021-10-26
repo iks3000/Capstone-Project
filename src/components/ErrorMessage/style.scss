@@ -1,0 +1,12 @@
+@import "../../assets/styles/_variables.scss";
+@import "../../assets/styles/_extends.scss";
+
+.error-message {
+    @extend %content-text;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $red;
+}

@@ -1,0 +1,39 @@
+@import '../../assets/styles/variables.scss';
+
+figure {
+    width: 500px;
+}
+
+.crop-photo {
+    width: 163px;
+    height: 163px;
+    background: center, no-repeat;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid $white;
+    border-radius: 50%;
+    line-height: 10;
+    margin: 0 auto;
+
+    img {
+        width: inherit;
+        height: inherit;
+    }
+}
+
+strong {
+    display: block;
+    font: 700 45px/54px $primary-fonts;
+    margin: 15px 0;
+}
+
+.title {
+    font: 600 25px/30px $primary-fonts;
+    margin: 15px 0;
+}
+
+.description {
+    font: 400 14px/21px $primary-fonts;
+    text-align: center;
+    padding-bottom: 15px;
+}

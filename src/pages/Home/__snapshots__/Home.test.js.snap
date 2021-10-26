@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Inner component 1`] = `
+<section
+  className="home"
+>
+  <PhotoBox
+    avatar="UserAvatar.png"
+    description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque."
+    name="John Doe"
+    title="Programmer. Creative. Innovator"
+  />
+  <Link
+    to="/inner"
+  >
+    <Button
+      text="Know more"
+    />
+  </Link>
+</section>
+`;

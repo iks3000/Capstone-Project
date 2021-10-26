@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Skills component 1`] = `
+<div
+  className="skills"
+  id="skillsComponent"
+>
+  <div
+    className="skills__header33"
+  >
+    <h2
+      className="skills__title"
+    >
+      Skills
+    </h2>
+    <Button
+      icon={
+        <img
+          alt="Pen with Line"
+          className="skills__button-ico"
+          src="penLine.svg"
+        />
+      }
+      onClick={[Function]}
+      text="Open edit"
+    />
+  </div>
+  <div
+    className="skills__content"
+  />
+  <div
+    className="skills__progress"
+  >
+    <div
+      className="skills__progress-value"
+    />
+    <div
+      className="skills__progress-value"
+    />
+  </div>
+  <div
+    className="skills__levels"
+  >
+    <div
+      className="skills__levels-title"
+    >
+      <p>
+        Beginner
+      </p>
+      <p>
+        Proficient
+      </p>
+    </div>
+    <div
+      className="skills__levels-title"
+    >
+      <p>
+        Expert
+      </p>
+      <p>
+        Master
+      </p>
+    </div>
+  </div>
+</div>
+`;

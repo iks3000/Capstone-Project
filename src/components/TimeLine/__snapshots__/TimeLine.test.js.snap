@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render TimeLine component 1`] = `
+<div
+  className="time-line"
+  id="timeLineComponent"
+>
+  <h2
+    className="time-line__title"
+  >
+    Education
+  </h2>
+  <Spinner />
+</div>
+`;

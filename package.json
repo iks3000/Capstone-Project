@@ -1,0 +1,83 @@
+{
+    "name": "cv-app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.36",
+        "@fortawesome/free-brands-svg-icons": "^5.15.4",
+        "@fortawesome/free-regular-svg-icons": "^5.15.4",
+        "@fortawesome/free-solid-svg-icons": "^5.15.4",
+        "@fortawesome/react-fontawesome": "^0.1.15",
+        "@reduxjs/toolkit": "^1.6.1",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^11.2.7",
+        "@testing-library/user-event": "^12.8.3",
+        "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+        "axios": "^0.22.0",
+        "enzyme": "^3.11.0",
+        "enzyme-to-json": "^3.6.2",
+        "formik": "^2.2.9",
+        "isotope-layout": "^3.0.6",
+        "jest-react-hooks-shallow": "^1.5.1",
+        "node-sass": "^6.0.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-redux": "^7.2.5",
+        "react-router-dom": "^5.3.0",
+        "react-scripts": "4.0.3",
+        "react-scrollspy-nav": "^1.2.4",
+        "web-vitals": "^1.1.2",
+        "yup": "^0.32.9"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "cross-env CI=true react-scripts test -u",
+        "eject": "react-scripts eject",
+        "test:coverage": "npm test -- --coverage",
+        "prepare": "husky install"
+    },
+    "jest": {
+        "collectCoverageFrom": [
+            "src/**/*.{js,jsx,ts,tsx}",
+            "!/node_modules/",
+            "!src/services/server.js",
+            "!src/jest.config.js",
+            "!src/reportWebVitals.js"
+        ],
+        "snapshotSerializers": [
+            "enzyme-to-json/serializer"
+        ],
+        "coverageThreshold": {
+            "global": {
+                "branches": 40,
+                "functions": 40,
+                "lines": 40,
+                "statements": 40
+            }
+        }
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "husky": "^7.0.2",
+        "miragejs": "^0.1.42"
+    }
+}

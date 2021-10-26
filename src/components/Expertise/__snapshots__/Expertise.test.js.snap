@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Expertise component 1`] = `
+<div
+  className="expertise"
+  id="expertiseComponent"
+>
+  <h2
+    className="expertise__title"
+  >
+    Experience
+  </h2>
+  <ul>
+    <li
+      className="expertise__item"
+      key="0"
+    >
+      <div
+        className="expertise__item-date"
+      >
+        <h3
+          className="expertise__content-title"
+        >
+          Google
+        </h3>
+        <p
+          className="expertise__content-date"
+        >
+          2013-2014
+        </p>
+      </div>
+      <div
+        className="expertise__item-info"
+      >
+        <h3
+          className="expertise__content-title"
+        >
+          Front-end developer / php programmer
+        </h3>
+        <Info
+          text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringil"
+        />
+      </div>
+    </li>
+    <li
+      className="expertise__item"
+      key="1"
+    >
+      <div
+        className="expertise__item-date"
+      >
+        <h3
+          className="expertise__content-title"
+        >
+          Twitter
+        </h3>
+        <p
+          className="expertise__content-date"
+        >
+          2012
+        </p>
+      </div>
+      <div
+        className="expertise__item-info"
+      >
+        <h3
+          className="expertise__content-title"
+        >
+          Web developer
+        </h3>
+        <Info
+          text="Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim"
+        />
+      </div>
+    </li>
+  </ul>
+</div>
+`;

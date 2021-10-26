@@ -1,0 +1,66 @@
+@import '../../assets/styles/_variables.scss';
+
+
+.inner {
+    transition: all 0.3s ease;
+
+    &.show-hide-panel {
+        margin-left: -250px;
+
+        .show-hide-btn {
+            left: 0;
+        }
+    }
+
+    .show-hide-btn {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: $oxfordBlue;
+        top: 30px;
+        left: 250px;
+        border-radius: 0 4px 4px 0;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        color: $white;
+        z-index: 10;
+
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    .content {
+        margin-left: 250px;
+        background-color: $white;
+        width: auto;
+        height: 100%;
+        display: block;
+        padding: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .inner  {
+        &.show-hide-panel {
+            margin-left: -55px;
+        }
+
+        .show-hide-btn {
+            left: 55px;
+        }
+
+        .content {
+            margin-left: 55px;
+            padding: 20px 30px;
+        }
+    }
+}

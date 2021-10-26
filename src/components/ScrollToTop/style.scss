@@ -1,0 +1,27 @@
+@import '../../assets/styles/_variables.scss';
+
+.scroll {
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+
+    .scroll-to-top {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $oxfordBlue;
+        border-radius: 4px 4px 0 0;
+        padding: 5px;
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+        color: $white;
+        z-index: 10;
+
+        &:hover {
+            color: $green;
+        }
+    }
+}

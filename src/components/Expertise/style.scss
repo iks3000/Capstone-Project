@@ -1,0 +1,38 @@
+@import '../../assets/styles/_variables.scss';
+@import '../../assets/styles/_extends.scss';
+
+.expertise {
+    margin: 50px 0;
+
+    &__item {
+        display: flex;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        @extend %title;
+    }
+
+    &__item-date {
+        width: 110px;
+        flex: 1 0 auto;
+    }
+
+    &__content-title {
+        @extend %content-title;
+        margin-bottom: 5px;
+    }
+
+    &__content-date {
+        font: 400 16px/19px $primary-fonts;
+        color: $raven;
+    }
+
+    &__item-info {
+        flex: 1 1 auto;
+    }
+}

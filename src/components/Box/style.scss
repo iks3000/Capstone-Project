@@ -1,0 +1,9 @@
+@import '../../assets/styles/_variables.scss';
+@import '../../assets/styles/_extends.scss';
+
+.info-box {
+    margin: 10px 0 40px;
+    &__title {
+        @extend %title;
+    }
+}

@@ -1,0 +1,26 @@
+@import "../../assets/styles/variables.scss";
+%buttonProps {
+    font: 400 16px/19px $primary-fonts;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.button {
+    @extend %buttonProps;
+    background-color: $oxfordBlue;
+    color: $white;
+    &:hover {
+        background-color: $green;
+    }
+}
+
+.button-disabled {
+    @extend %buttonProps;
+    background-color: $raven;
+    color: $midnight;
+    opacity: 0.7;
+    cursor: not-allowed;
+}

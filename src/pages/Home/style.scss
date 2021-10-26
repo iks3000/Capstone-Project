@@ -1,0 +1,14 @@
+@import '../../assets/styles/variables.scss';
+
+.home {
+    background: url(../../assets/images/mainBackground.png) 0 0 no-repeat;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: $white;
+}

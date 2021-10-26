@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ErrorMessage component 1`] = `
+<div
+  className="error-message"
+>
+  Something went wrong; please review your server connection!
+</div>
+`;

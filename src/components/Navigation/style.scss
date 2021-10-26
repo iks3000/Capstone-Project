@@ -1,0 +1,45 @@
+@import '../../assets/styles/_variables.scss';
+
+.navigation {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    &__item {
+        display: block;
+        font: 400 16px/19px $primary-fonts;
+        color: $raven;
+        padding: 20px 0;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+            color: $white;
+        }
+
+        &.is-active {
+            color: $green;
+        }
+    }
+
+    .ico {
+        width: 20px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navigation {
+        &__item {
+            span {
+                display: none;
+            }
+        }
+        .ico {
+            padding-right: 0;
+        }
+    }
+}
+

@@ -1,0 +1,48 @@
+@import '../../assets/styles/_variables.scss';
+@import '../../assets/styles/_extends.scss';
+
+.address {
+    margin: 50px 0;
+
+    &__title {
+        @extend %title;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .img-wrapper {
+            width: 50px;
+        }
+
+        .content-title {
+            @extend %content-title;
+        }
+
+        .content-link {
+            font: 400 16px/19px $primary-fonts;
+            color: $raven;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .address {
+        .content-link {
+            font-size: 12px;
+        }
+        .img-wrapper {
+            width: 30px;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

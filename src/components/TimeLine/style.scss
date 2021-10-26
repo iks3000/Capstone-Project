@@ -1,0 +1,66 @@
+@import "../../assets/styles/_variables.scss";
+@import "../../assets/styles/_extends.scss";
+.time-line {
+    margin: 50px 0;
+    &__title {
+        @extend %title;
+    }
+    &__list {
+        display: block;
+        position: relative;
+        min-height: 30vh;
+        max-height: 80vh;
+        overflow-y: scroll;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 5px;
+            top: 0;
+            left: 17px;
+            background-color: $green;
+        }
+    }
+    &__item {
+        display: flex;
+        margin: 10px 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__content {
+        position: relative;
+        padding: 15px;
+        background-color: $gallery;
+        &:nth-of-type(1) {
+            margin-top: 0;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 18px;
+            left: -13px;
+            border-top: 8px solid transparent;
+            border-right: 13px solid $gallery;
+            border-bottom: 8px solid transparent;
+        }
+    }
+    &__date {
+        @extend %content-title;
+        padding: 15px;
+        position: relative;
+        left: -15px;
+        width: 65px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        background-color: $white;
+    }
+    &__content-title {
+        @extend %content-title;
+        padding-bottom: 5px;
+    }
+}

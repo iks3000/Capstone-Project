@@ -1,0 +1,89 @@
+@import '../../assets/styles/_variables.scss';
+
+.panel {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    background-color: $oxfordBlue;
+    color: $white;
+    margin-left: 0;
+
+    figure {
+        width: auto;
+        text-align: center;
+
+        .crop-photo {
+            width: 100px;
+            height: 100px;
+            img {
+                display: block;
+            }
+        }
+
+        strong {
+            display: block;
+            font: 700 16px/19px $primary-fonts;
+            margin: 10px 0 40px;
+        }
+
+        article {
+            display: none;
+        }
+    }
+
+    &__go-home {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+    }
+
+    .button {
+        .go-home-ico {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .panel {
+        display: flex;
+        justify-content: space-between;
+        width: 55px;
+        padding: 20px 0;
+        align-items: center;
+
+        .mobile-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        figure {
+            .crop-photo {
+                width: 35px;
+                height: 35px;
+            }
+
+            strong {
+                display: none;
+            }
+        }
+
+        a {
+            margin: 0;
+        }
+
+        .button {
+            background-color: $green;
+            padding: 8px 15px;
+            .go-home-ico {
+                margin-right: 0;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+}
